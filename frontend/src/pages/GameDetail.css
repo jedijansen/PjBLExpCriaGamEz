@@ -1,0 +1,215 @@
+/* ============================================
+   Página GameDetail - Visualização Detalhada
+   ============================================ */
+
+/* Top Bar */
+.detail-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.detail-topbar-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Content Layout */
+.detail-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: 36px;
+}
+
+/* Image */
+.detail-image-section {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    aspect-ratio: 3 / 4;
+    align-self: start;
+}
+
+.detail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+    color: var(--text-muted);
+    min-height: 300px;
+}
+
+/* Info Section */
+.detail-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+/* Score */
+.detail-score {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: var(--radius-full);
+    color: #fff;
+    font-weight: 700;
+    width: fit-content;
+    box-shadow: var(--shadow-sm);
+}
+
+.detail-score svg {
+    font-size: 1rem;
+}
+
+.detail-score-value {
+    font-size: 1.4rem;
+}
+
+.detail-score-max {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* Meta Grid */
+.detail-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.detail-meta-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px;
+    background: rgba(124, 58, 237, 0.05);
+    border: 1px solid rgba(124, 58, 237, 0.1);
+    border-radius: var(--radius-md);
+}
+
+.detail-meta-icon {
+    color: var(--accent-cyan);
+    font-size: 1.1rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.detail-meta-label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+}
+
+.detail-meta-value {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Description */
+.detail-description {
+    padding-top: 8px;
+}
+
+.detail-section-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.detail-description p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Timestamps */
+.detail-timestamps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+}
+
+.detail-timestamp {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.detail-timestamp svg {
+    font-size: 0.7rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .detail-content {
+        grid-template-columns: 1fr;
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .detail-image-section {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .detail-title {
+        font-size: 1.4rem;
+    }
+
+    .detail-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .detail-topbar-actions {
+        width: 100%;
+    }
+
+    .detail-topbar-actions .btn {
+        flex: 1;
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "game-collection-backend",
+  "version": "1.0.0",
+  "description": "API REST para gerenciamento de coleção de jogos - Gustavo Jansen Butenas",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "author": "Gustavo Jansen Butenas",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.5"
+  }
+}
