@@ -1,8 +1,6 @@
-# 🎮 Game Collection - Sistema de Coleção de Jogos
+# 🎮 GamEz- Sistema de Biblioteca e Review de Jogos
 
 **Desenvolvido por: Gustavo Jansen Butenas**
-
-Sistema web completo para gerenciamento de uma coleção de jogos, com funcionalidades de CRUD (Create, Read, Update, Delete).
 
 ## 📋 Tecnologias Utilizadas
 
@@ -12,8 +10,6 @@ Sistema web completo para gerenciamento de uma coleção de jogos, com funcional
 - **Comunicação:** Axios (HTTP Client)
 
 ## 📦 Pré-requisitos
-
-Antes de começar, certifique-se de ter instalado:
 
 - [Node.js](https://nodejs.org/) (versão 18 ou superior)
 - [npm](https://www.npmjs.com/) (incluso com o Node.js)
@@ -156,16 +152,14 @@ game-collection/
 
 ## ✨ Funcionalidades
 
-- ✅ Listagem de jogos com paginação
-- ✅ Busca por nome, plataforma, gênero ou desenvolvedora
-- ✅ Cadastro de novos jogos com validação
-- ✅ Edição de jogos existentes
-- ✅ Exclusão de jogos com confirmação
-- ✅ Visualização detalhada de cada jogo
-- ✅ Interface responsiva e moderna
-- ✅ Tratamento de erros com mensagens amigáveis
-- ✅ Validações no frontend e backend
+- Listagem de jogos com paginação
+- Busca por nome, plataforma, gênero ou desenvolvedora
+- Cadastro de novos jogos com validação
+- Edição de jogos existentes
+- Exclusão de jogos com confirmação
+- Visualização detalhada de cada jogo
+- Interface responsiva e moderna
+- Tratamento de erros com mensagens amigáveis
+- Validações no frontend e backend
 
-## 👤 Autor
-
-**Gustavo Jansen Butenas**
+Inspirado no App Futez, um aplicativo de avaliação de jogos e jogadores de futebol.
