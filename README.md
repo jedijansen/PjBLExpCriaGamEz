@@ -2,6 +2,8 @@
 
 **Desenvolvido por: Gustavo Jansen Butenas**
 
+Vídeo Disponível no YouTube: https://www.youtube.com/@JansenJedi
+
 ## 📋 Tecnologias Utilizadas
 
 - **Frontend:** React (Vite) + CSS
